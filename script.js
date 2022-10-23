@@ -1,10 +1,7 @@
+const options= ["rock", "paper", "scissors"];
+
 function getComputerChoice(){
-    let computerChoice = '';
-    return computerChoice;
+    const choice = options[(Math.random()* options.length)]
 }
 
-function singleRound(playerSelection, computerSelection){
-    
-    return 
-}
-
+getComputerChoice();
