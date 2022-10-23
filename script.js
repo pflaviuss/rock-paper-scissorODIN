@@ -2,4 +2,9 @@ function getComputerChoice(){
     let computerChoice = '';
     return computerChoice;
 }
-getComputerChoice();
+
+function singleRound(playerSelection, computerSelection){
+    
+    return 
+}
+
