@@ -1,13 +1,6 @@
 const selectionButtons = document.querySelectorAll('[data-selection]');
 const finalColumn = document.querySelector('[data-final-column]')
 const computerScoreSpan = document.querySelector('[data-computer-score]');
-const x = 5;
-const y = 7;
-
-
-
-
-
 const yourScoreSpan = document.querySelector('[data-your-score]');
 const SELECTIONS = [
 {   
@@ -54,10 +47,13 @@ function makeSelection(selection) {
 function incrementScore(scoreSpan){
     scoreSpan.innerText = parseInt(scoreSpan.innerText)+1;
     if (scoreSpan.innerText == 5){
-        alert('GAMEOVER');
-        scoreSpan.innerText==0;
+        alert();
+        yourScoreSpan.innerHTML=0;
+        computerScoreSpan.innerHTML=0;
+        
     }
-    console.log(scoreSpan);
+    console.log('scorespan',scoreSpan);
+    console.log('yourscorespan',yourScoreSpan)
 }
 
 function addSelectionResult(selection, winner) {
